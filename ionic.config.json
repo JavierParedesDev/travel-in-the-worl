@@ -1,0 +1,7 @@
+{
+  "name": "travel-in-the-worl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
