@@ -10,3 +10,23 @@
     width: 100%;
     padding: 10px;
   }
+  .custom-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .modal-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+
+    &::after {
+      content: "Select";
+      color: #ff397b;
+      padding-right: 20px;
+    }
+  }

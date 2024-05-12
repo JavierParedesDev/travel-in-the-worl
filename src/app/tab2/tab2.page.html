@@ -1,11 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tasas de Cambio(USD)
+      Tasas de Cambio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
+  <ion-item class="custom-item">
+    <ion-label>Selecciona la moneda base</ion-label>
+    <ion-select (ionChange)="cambiarMonedaBase($event.detail.value)" class="modal-select">
+      <ion-select-option value="USD">Dólares</ion-select-option>
+      <ion-select-option value="EUR">Euros</ion-select-option>
+      <ion-select-option value="GBP">Libras</ion-select-option>
+      <ion-select-option value="JPY">Yenes</ion-select-option>
+      <ion-select-option value="CHF">Francos suizos</ion-select-option>
+      <ion-select-option value="CAD">Dólares canadienses</ion-select-option>
+      <ion-select-option value="AUD">Dólares australianos</ion-select-option>
+      <ion-select-option value="CNY">Yuanes</ion-select-option>
+    </ion-select>
+  </ion-item>
   <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="filterItems($event)"></ion-searchbar>
 
   <ion-list>
@@ -16,14 +29,14 @@
   </ion-list>
 
   <ion-item>
-    <ion-label position="floating">Cantidad en dólares:</ion-label>
+    <ion-label position="floating">Ingrese cantidad de {{baseCurrency}}:</ion-label>
     <ion-input type="number" [(ngModel)]="cantidadDolares"></ion-input>
   </ion-item>
 
   <button class="btn" (click)="calcularTotal()">Calcular Total</button>
 
   <ion-item *ngIf="total">
-    <ion-label>Total en la moneda seleccionada:</ion-label>
+    <ion-label>Total en {{searchTerm}}:</ion-label>
     <ion-text>{{ total | number:'1.2-2' }}</ion-text>
   </ion-item>
 </ion-content>
