@@ -1,0 +1,29 @@
+.country-row {
+    margin-bottom: 10px;
+  }
+  
+  .photo-col {
+    padding: 5px;
+  }
+  
+  .photo-col ion-card {
+    height: 200px; /* Altura deseada para cada tarjeta */
+  }
+  
+  .photo-col ion-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar la imagen al tamaño de la tarjeta */
+  }
+  
+  .btn{
+    background-color: #e9004e;
+    color: #fff;
+    font-size: small;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+  
+  }

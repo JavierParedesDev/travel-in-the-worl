@@ -1,17 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<div class="game-container">
+  <div class="game-header">Quiz Game</div>
+  <div class="game-instructions">Seleccione la respuesta correcta para cada pregunta</div>
+  <div class="score-container">
+    <div class="score-text">Score: {{ score }} / {{ questions.length }}</div>
+  </div>
+  <div>
+    <div class="level-container">
+      <div class="level-text">Level: {{ currentLevel }} , siguiente nivel: {{ maxLevel}}</div>
+      <div id="message" class="message-incorrecto"></div>
+      
+    </div>
+  </div>
+  <div *ngFor="let question of questions" class="question-container">
+    <div class="question-text">{{ question.question }}</div>
+    <div class="answer-options">
+      <div *ngFor="let answer of question.answers" class="answer-option">
+        <input type="radio" id="{{ answer }}" name="answer" [value]="answer" [(ngModel)]="question.selectedAnswer">
+        <label for="{{ answer }}" class="answer-label">{{ answer }}</label>
+      </div>
+    </div>
+    <button (click)="checkAnswer(question)" class="check-button">Check 😬</button>
+  </div>
+</div>
+<!-- tab3.component.html -->
+<app-modal [visible]="gameOver" (restartGameClicked)="restartGame()"></app-modal>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+<!-- Modal -->

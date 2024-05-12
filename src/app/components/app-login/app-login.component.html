@@ -1,0 +1,8 @@
+<div class="login-container">
+    <h2>Iniciar sesión</h2>
+    <input type="email" #email placeholder="Correo electrónico">
+    <input type="password" #password placeholder="Contraseña">
+    <button (click)="login(email.value, password.value)">Iniciar sesión</button>
+    <button (click)="goBack()">Atrás</button>
+  </div>
+  

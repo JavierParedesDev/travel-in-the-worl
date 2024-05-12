@@ -1,0 +1,183 @@
+.game-container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  overflow-y: auto;
+}
+@keyframes titulo {
+  0% {
+    transform: scale(1);
+    color: #ff6e9e;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scale(2);
+    color: #ff3b89;
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: scale(3);
+    color: #ff3b89;
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: scale(2);
+    color: #e9004e;
+    transform: rotate(0deg);
+  }
+}
+.game-header {
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  scale: 1;
+  animation: titulo 2s infinite;
+}
+.game-instructions {
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.score-text {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: #e9004e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px 50px 50px 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: rotacion 1s infinite linear;
+  animation-timing-function: step-start(scroll);
+  
+}
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.level-text {
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ff6e9e;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: brillo 2s infinite linear alternate forwards;
+}
+@keyframes brillo {
+  0% {
+    background: linear-gradient(90deg, #ff6e9e, #ff3b89, #e9004e);
+    transform: translate(0, 0);
+
+  }
+  12% {
+    background: linear-gradient(90deg, #ff6e9e, #ff3b89, #e9004e);
+    
+
+  }
+  25% {
+    background: linear-gradient(90deg, #ff3b89, #e9004e, #ff6e9e);
+
+
+  }
+  37% {
+    background: linear-gradient(90deg, #ff3b89, #e9004e, #ff6e9e);
+    
+
+  }
+  50% {
+    background: linear-gradient(90deg, #ff3b89, #e9004e, #ff6e9e);
+    transform: translate(5px, 5px);
+
+  }
+  62% {
+    background: linear-gradient(90deg, #ff3b89, #e9004e, #ff6e9e);
+
+  }
+  75% {
+    background: linear-gradient(90deg, #e9004e, #ff6e9e, #ff3b89);
+    transform: translate(5px, -5px);
+
+  }
+  87% {
+    background: linear-gradient(90deg, #e9004e, #ff6e9e, #ff3b89);
+    
+
+  }
+  100% {
+    background: linear-gradient(90deg, #e9004e, #ff6e9e, #ff3b89);
+    transform: translate(0, 0);
+  }
+}
+.question-text {
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.answer-options {
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: flex-start; /* Alinea las respuestas a la izquierda */
+  padding: 5px;
+}
+
+.answer-option {
+  margin-bottom: 10px;
+  align-items: flex-start; /* Alinea las respuestas a la izquierda */
+}
+.answer-label {
+  margin-left: 10px;
+}
+input[type="radio"] {
+  margin-right: 10px;
+  scale: 1.5;
+}
+.check-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e9004e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.check-button:hover {
+  background-color: #ff0066;
+}
+
+.message-incorrecto{
+  font-size: medium;
+  text-align: center;
+}
+
+
