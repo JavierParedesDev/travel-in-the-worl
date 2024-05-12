@@ -157,10 +157,18 @@
 .answer-label {
   margin-left: 10px;
 }
-input[type="radio"] {
-  margin-right: 10px;
-  scale: 1.5;
+.answer-label {
+  margin-left: 10px;
 }
+input[type="radio"]:checked {
+  outline: 2px solid #007bff; 
+}
+input[type="radio"] {
+  transform: scale(1.5); 
+  margin-right: 10px;
+}
+
+
 .check-button {
   margin-top: 10px;
   padding: 10px 20px;
