@@ -1,0 +1,46 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 80%;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gamer-style {
+    color: #fff; /* Texto blanco */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 4px solid #e9004e; /* Borde morado brillante */
+    box-shadow: 0 0 20px #ff0055; /* Sombra morada */
+    font-size: larger;
+}
+.gamer-button {
+    background-color: #e9004e; /* Color de fondo verde */
+    border: none;
+    color: white; /* Texto blanco */
+    padding: 15px 32px; /* Espaciado interior */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 4px 2px; /* Margen */
+    cursor: pointer;
+    border-radius: 8px; /* Borde redondeado */
+    transition-duration: 0.4s; /* Duración de la transición */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Fuente estilo retro */
+}
+
+.gamer-button:hover {
+    background-color: #ff377a; /* Cambio de color al pasar el mouse */
+}
