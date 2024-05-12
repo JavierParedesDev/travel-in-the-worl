@@ -12,12 +12,16 @@ export class Tab2Page {
   searchTerm: string = '';
   cantidadDolares: number = 0;
   total: number = 0;
-  
+  baseCurrency: string = 'USD'; // Moneda base por defecto (dólares)
 
   constructor(private currencyService: CurrencyService) {}
 
   ngOnInit() {
-    this.currencyService.getExchangeRates('USD').subscribe(
+    this.loadExchangeRates();
+  }
+
+  loadExchangeRates() {
+    this.currencyService.getExchangeRates(this.baseCurrency).subscribe(
       (data: any) => {
         this.rates = data.conversion_rates;
         this.filteredRates = { ...this.rates };
@@ -41,6 +45,12 @@ export class Tab2Page {
       }
       return filtered;
     }, {});
+  }
+
+  cambiarMonedaBase(newBase: string) {
+    this.baseCurrency = newBase;
+    this.loadExchangeRates();
+    this.searchTerm = '';
   }
 
   calcularTotal() {

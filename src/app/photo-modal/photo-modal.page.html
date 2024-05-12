@@ -1,6 +1,6 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>Detalle de la Foto</ion-title>
+    <ion-title>Foto Seleccionada</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="closeModal()">
         <ion-icon slot="icon-only" name="close"></ion-icon>
@@ -9,24 +9,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large"></ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <!-- Mostrar la foto seleccionada -->
-  <ion-img [src]="selectedPhoto.urls.regular" alt="Photo"></ion-img>
-  <!-- Mostrar los detalles de la foto -->
+<ion-content class="ion-padding">
+  <img [src]="selectedPhoto.urls.regular" alt="Foto Seleccionada">
   <ion-card>
-    <ion-card-header> Autor: {{ photoDetails.user.name }} </ion-card-header>
     <ion-card-content>
-      Descripción: {{ photoDetails.description || 'No disponible' }}
-      <br />
-      Ubicación: {{ photoDetails.location ? photoDetails.location.city + ', ' +
-      photoDetails.location.country : 'No disponible' }}
+      <ion-card-title>Detalles de la Foto</ion-card-title>
+      <ion-card-subtitle>{{ photoDetails?.description }}</ion-card-subtitle>
+      <ion-card-content>{{ photoDetails?.alt_description }}</ion-card-content>
     </ion-card-content>
-    <!-- Otros detalles de la foto según tus necesidades -->
   </ion-card>
+  <ion-button expand="block" (click)="iniciarDescarga()">Descargar Imagen</ion-button>
 </ion-content>
