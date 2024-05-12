@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-loading-page',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoadingPagePage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    // Después de 2 segundos, redirigir a la página de tabs
+    setTimeout(() => {
+      this.router.navigate(['/tabs']);
+    }, 2000); // Cambia este valor según lo que consideres un tiempo adecuado
   }
-
 }
