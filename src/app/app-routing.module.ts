@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AppLoginComponent } from './components/app-login/app-login.component';
 import { UploadPhotoModalComponent } from './upload-photo-modal/upload-photo-modal.component';
-
 const routes: Routes = [
   {
     path: '',

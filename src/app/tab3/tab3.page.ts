@@ -8,15 +8,11 @@ import { TriviaService } from '../triviaJuegos/trivia.service';
   styleUrls: ['tab3.page.scss'],
 })
 export class Tab3Page implements OnInit {
-
   questions = [] as any[];
   score = 0;
   currentLevel = 1; // Nivel actual
   maxLevel = 6;
   gameOver: boolean = false;
-
-  
-
 
   constructor(private triviaService: TriviaService) {}
 
@@ -35,6 +31,18 @@ export class Tab3Page implements OnInit {
     this.currentLevel = 1;
     this.score = 0;
     this.loadQuestions(this.currentLevel);
+
+    // Eliminar la selección de respuestas y restablecer el estado de cada pregunta
+    this.questions.forEach((question: any) => {
+      question.selectedAnswer = null; // Eliminar la respuesta seleccionada
+      question.isCorrect = null; // Restablecer el estado de la pregunta
+    });
+
+    // Reiniciar el mensaje
+    const messageDiv = document.getElementById('message');
+    if (messageDiv) {
+      messageDiv.innerText = '';
+    }
   }
 
   loadQuestions(level: number) {
@@ -42,7 +50,9 @@ export class Tab3Page implements OnInit {
     const allQuestions = this.triviaService.getTriviaData(); // Llama al método del servicio para obtener las preguntas
 
     // Filtrar preguntas por nivel
-    const questionsByLevel = allQuestions.filter((question: any) => question.level === level);
+    const questionsByLevel = allQuestions.filter(
+      (question: any) => question.level === level
+    );
 
     // Seleccionar aleatoriamente 10 preguntas del nivel
     const selectedQuestions = this.shuffleArray(questionsByLevel).slice(0, 10);
@@ -52,16 +62,13 @@ export class Tab3Page implements OnInit {
   }
 
   checkAnswer(question: any) {
-
-    
-    
     const selectedIndex = question.answers.findIndex(
       (answer: any) => answer === question.selectedAnswer
     );
     const correctIndex = question.answers.findIndex(
       (answer: any) => answer === question.correctAnswer
     );
-  
+
     if (selectedIndex === correctIndex) {
       // Respuesta correcta
       question.isCorrect = true;
@@ -78,15 +85,14 @@ export class Tab3Page implements OnInit {
       if (index !== -1) {
         this.questions.splice(index, 1);
       }
-  
+
       // Cargar nuevas preguntas si el arreglo está vacío y el nivel actual es menor que el máximo nivel
       if (this.questions.length === 0 && this.currentLevel < this.maxLevel) {
         this.currentLevel++; // Avanzar al siguiente nivel
-        this.maxLevel ++;
+        this.maxLevel++;
         this.loadQuestions(this.currentLevel);
         this.score = 0;
-      }
-      else if (this.score >= this.maxLevel) {
+      } else if (this.score >= this.maxLevel) {
         // Si el puntaje es igual o mayor que el nivel máximo, avanzar al siguiente nivel
         this.currentLevel++;
         this.maxLevel++;
@@ -104,9 +110,9 @@ export class Tab3Page implements OnInit {
         messageDiv.style.color = 'red';
       }
       const index = this.questions.indexOf(question);
-    if (index !== -1) {
-      this.questions.splice(index, 1);
-    }
+      if (index !== -1) {
+        this.questions.splice(index, 1);
+      }
     }
     // Verificar si el juego ha terminado
     if (this.questions.length === 0) {
@@ -123,9 +129,7 @@ export class Tab3Page implements OnInit {
     }
     return array;
   }
-  selectAnswer(question: { selectedAnswer: any; } , selectedAnswer: any) {
+  selectAnswer(question: { selectedAnswer: any }, selectedAnswer: any) {
     question.selectedAnswer = selectedAnswer; // Almacena la respuesta seleccionada en la pregunta
   }
-  
-
 }
