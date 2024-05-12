@@ -8,21 +8,22 @@
     <div class="level-container">
       <div class="level-text">Level: {{ currentLevel }} , siguiente nivel: {{ maxLevel}}</div>
       <div id="message" class="message-incorrecto"></div>
-      
     </div>
   </div>
   <div *ngFor="let question of questions" class="question-container">
     <div class="question-text">{{ question.question }}</div>
     <div class="answer-options">
+      <!-- Utilizamos ngFor para mostrar las opciones de respuesta -->
       <div *ngFor="let answer of question.answers" class="answer-option">
-        <input type="radio" id="{{ answer }}" name="answer" [value]="answer" [(ngModel)]="question.selectedAnswer">
-        <label for="{{ answer }}" class="answer-label">{{ answer }}</label>
-      </div>
+        <!-- En lugar de radio, usamos un botón o div para cada opción de respuesta -->
+        <button (click)="selectAnswer(question, answer)"
+                [class.selected]="question.selectedAnswer === answer"
+                class="answer-button">{{ answer }}</button>
     </div>
+    
+    </div>
+    <!-- Botón para verificar la respuesta -->
     <button (click)="checkAnswer(question)" class="check-button">Check 😬</button>
   </div>
 </div>
-<!-- tab3.component.html -->
 <app-modal [visible]="gameOver" (restartGameClicked)="restartGame()"></app-modal>
-
-<!-- Modal -->

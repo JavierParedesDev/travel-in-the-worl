@@ -1,4 +1,4 @@
-export const triviaData =[
+export const triviaData = [
   {
     level: 1,
     question: '¿Cuál es la capital de Francia?',
@@ -20,25 +20,25 @@ export const triviaData =[
   {
     level: 1,
     question: '¿Cuál es el río más largo de Europa?',
-    answers: ['Volga', 'Danubio', 'Rin', 'Loira'],
+    answers: ['Rin', 'Danubio', 'Volga', 'Loira'],
     correctAnswer: 'Volga',
   },
   {
     level: 1,
     question: '¿Cuál es el continente más grande del mundo?',
-    answers: ['Asia', 'África', 'América', 'Europa'],
+    answers: ['América', 'África', 'Asia', 'Europa'],
     correctAnswer: 'Asia',
   },
   {
     level: 1,
     question: '¿Cuál es el país más grande de América del Sur?',
-    answers: ['Brasil', 'Argentina', 'Colombia', 'Perú'],
+    answers: ['chile', 'Argentina', 'Colombia', 'Brasil'],
     correctAnswer: 'Brasil',
   },
   {
     level: 1,
     question: '¿Cuál es el animal terrestre más grande del mundo?',
-    answers: ['Elefante', 'Jirafa', 'Hipopótamo', 'Rinoceronte'],
+    answers: ['Rinoceronte', 'Jirafa', 'Hipopótamo', 'Elefante'],
     correctAnswer: 'Elefante',
   },
   {
@@ -50,7 +50,7 @@ export const triviaData =[
   {
     level: 1,
     question: '¿Cuál es el país más visitado del mundo?',
-    answers: ['Francia', 'España', 'Italia', 'Estados Unidos'],
+    answers: ['Italia', 'España', 'Francia', 'Estados Unidos'],
     correctAnswer: 'Francia',
   },
   {
@@ -79,7 +79,7 @@ export const triviaData =[
   {
     level: 1,
     question: '¿Cuál es el país más poblado de Europa?',
-    answers: ['Rusia', 'Alemania', 'Francia', 'Reino Unido'],
+    answers: ['Francia', 'Alemania', 'Rusia', 'Reino Unido'],
     correctAnswer: 'Rusia',
   },
   {
@@ -115,7 +115,7 @@ export const triviaData =[
   {
     level: 2,
     question: '¿Cuál es el río más largo de América del Sur?',
-    answers: ['Amazonas', 'Paraná', 'Orinoco', 'Magdalena'],
+    answers: ['Orinoco', 'Paraná', 'Amazonas', 'Magdalena'],
     correctAnswer: 'Amazonas',
   },
   {
@@ -127,7 +127,7 @@ export const triviaData =[
   {
     level: 2,
     question: '¿Cuál es el país más pequeño de Europa?',
-    answers: ['Vaticano', 'Mónaco', 'San Marino', 'Liechtenstein'],
+    answers: ['Mónaco', 'Vaticano', 'San Marino', 'Liechtenstein'],
     correctAnswer: 'Vaticano',
   },
   {
@@ -139,13 +139,13 @@ export const triviaData =[
   {
     level: 2,
     question: '¿Cuál es el país más grande de Oceanía?',
-    answers: ['Australia', 'Nueva Zelanda', 'Papúa Nueva Guinea', 'Fiyi'],
+    answers: ['Fiyi', 'Nueva Zelanda', 'Papúa Nueva Guinea', 'Australia'],
     correctAnswer: 'Australia',
   },
   {
     level: 2,
     question: '¿Cuál es el río más largo de Asia?',
-    answers: ['Yangtsé', 'Misisipi', 'Ganges', 'Amur'],
+    answers: ['Ganges', 'Misisipi', 'Ganges', 'Yangtsé'],
     correctAnswer: 'Yangtsé',
   },
   {
@@ -175,7 +175,7 @@ export const triviaData =[
   {
     level: 2,
     question: '¿Cuál es el río más largo de África?',
-    answers: ['Nilo', 'Congo', 'Níger', 'Zambeze'],
+    answers: ['Níger', 'Congo', 'Nilo', 'Zambeze'],
     correctAnswer: 'Nilo',
   },
   {
@@ -187,7 +187,7 @@ export const triviaData =[
   {
     level: 2,
     question: '¿Cuál es el país más pequeño de Asia?',
-    answers: ['Singapur', 'Mónaco', 'Brunéi', 'Maldivas'],
+    answers: ['Maldivas', 'Mónaco', 'Brunéi', 'Singapur'],
     correctAnswer: 'Singapur',
   },
   {
@@ -211,7 +211,12 @@ export const triviaData =[
   {
     level: 2,
     question: '¿Cuál es el punto más bajo de la Tierra?',
-    answers: ['Mar Muerto', 'Fosa de las Marianas', 'Depresión de Afar', 'Lago Assal'],
+    answers: [
+      'Mar Muerto',
+      'Fosa de las Marianas',
+      'Depresión de Afar',
+      'Lago Assal',
+    ],
     correctAnswer: 'Mar Muerto',
   },
   {
@@ -247,25 +252,25 @@ export const triviaData =[
   {
     level: 3,
     question: '¿Cuál es el país más visitado del mundo?',
-    answers: ['Francia', 'España', 'Estados Unidos', 'Italia'],
+    answers: ['España', 'Francia', 'Estados Unidos', 'Italia'],
     correctAnswer: 'Francia',
   },
   {
     level: 3,
     question: '¿Cuál es el país más poblado de Asia?',
-    answers: ['China', 'India', 'Indonesia', 'Pakistán'],
+    answers: ['India', 'China', 'Indonesia', 'Pakistán'],
     correctAnswer: 'China',
   },
   {
     level: 3,
     question: '¿Cuál es el país más grande de América del Norte?',
-    answers: ['Canadá', 'Estados Unidos', 'México', 'Groenlandia'],
+    answers: ['México', 'Estados Unidos', 'Canadá', 'Groenlandia'],
     correctAnswer: 'Canadá',
   },
   {
     level: 3,
     question: '¿Cuál es el río más largo de Europa?',
-    answers: ['Volga', 'Danubio', 'Rin', 'Támesis'],
+    answers: ['Rin', 'Danubio', 'Volga', 'Támesis'],
     correctAnswer: 'Volga',
   },
   {
@@ -277,7 +282,7 @@ export const triviaData =[
   {
     level: 3,
     question: '¿Cuál es el lago más grande del mundo?',
-    answers: ['Caspian', 'Superior', 'Victoria', 'Baikal'],
+    answers: ['Victoria', 'Superior', 'Caspian', 'Baikal'],
     correctAnswer: 'Caspian',
   },
   {
@@ -289,133 +294,148 @@ export const triviaData =[
   {
     level: 3,
     question: '¿Cuál es el río más largo de América del Sur?',
-    answers: ['Amazonas', 'Paraná', 'Orinoco', 'Magdalena'],
+    answers: ['Paraná', 'Magdalena', 'Amazonas', 'Orinoco'],
     correctAnswer: 'Amazonas',
   },
   {
     level: 3,
     question: '¿Cuál es el país más grande de Oceanía?',
-    answers: ['Australia', 'Nueva Zelanda', 'Papúa Nueva Guinea', 'Fiyi'],
+    answers: ['Fiyi', 'Nueva Zelanda', 'Australia', 'Papúa Nueva Guinea'],
     correctAnswer: 'Australia',
   },
   {
     level: 3,
     question: '¿Cuál es el país más poblado de América del Sur?',
-    answers: ['Brasil', 'Argentina', 'Colombia', 'Perú'],
+    answers: ['Argentina', 'Perú', 'Brasil', 'Colombia'],
     correctAnswer: 'Brasil',
   },
   {
     level: 3,
     question: '¿Cuál es el océano más grande del mundo?',
-    answers: ['Pacífico', 'Atlántico', 'Índico', 'Antártico'],
+    answers: ['Antártico', 'Índico', 'Atlántico', 'Pacífico'],
     correctAnswer: 'Pacífico',
   },
   {
     level: 3,
     question: '¿Cuál es el país más grande del mundo?',
-    answers: ['Rusia', 'Canadá', 'China', 'Estados Unidos'],
+    answers: ['Estados Unidos', 'Canadá', 'China', 'Rusia'],
     correctAnswer: 'Rusia',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de Australia?',
-    answers: ['Canguro', 'Koala', 'Dingo', 'Emú'],
+    answers: ['Koala', 'Dingo', 'Emú', 'Canguro'],
     correctAnswer: 'Canguro',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de Canadá?',
-    answers: ['Castor', 'Oso polar', 'Lobo', 'Alce'],
+    answers: ['Alce', 'Oso polar', 'Castor', 'Lobo'],
     correctAnswer: 'Castor',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de Brasil?',
-    answers: ['Jaguar', 'Tucán', 'Anaconda', 'Papagayo'],
+    answers: ['Anaconda', 'Tucán', 'Papagayo', 'Jaguar'],
     correctAnswer: 'Jaguar',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de China?',
-    answers: ['Panda gigante', 'Dragón chino', 'Tigre siberiano', 'Leopardo de las nieves'],
+    answers: [
+      'Leopardo de las nieves',
+      'Tigre siberiano',
+      'Dragón chino',
+      'Panda gigante',
+    ],
     correctAnswer: 'Panda gigante',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de Sudáfrica?',
-    answers: ['León', 'Elefante', 'Rinoceronte', 'Leopardo'],
+    answers: ['Rinoceronte', 'León', 'Elefante', 'Leopardo'],
     correctAnswer: 'León',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de India?',
-    answers: ['Tigre de Bengala', 'Elefante indio', 'Leopardo de las nieves', 'León asiático'],
+    answers: [
+      'Tigre de Bengala',
+      'León asiático',
+      'Leopardo de las nieves',
+      'Elefante indio',
+    ],
     correctAnswer: 'Tigre de Bengala',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de Estados Unidos?',
-    answers: ['Águila calva', 'Bisonte americano', 'Oso pardo', 'Lobo gris'],
+    answers: ['Oso pardo', 'Águila calva', 'Bisonte americano', 'Lobo gris'],
     correctAnswer: 'Águila calva',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de Rusia?',
-    answers: ['Oso pardo', 'Lobo gris', 'Tigre siberiano', 'Leopardo de las nieves'],
+    answers: [
+      'Tigre siberiano',
+      'Oso pardo',
+      'Leopardo de las nieves',
+      'Lobo gris',
+    ],
     correctAnswer: 'Oso pardo',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de México?',
-    answers: ['Águila real', 'Jaguar', 'Coyote', 'Tlacuache'],
+    answers: ['Coyote', 'Águila real', 'Jaguar', 'Tlacuache'],
     correctAnswer: 'Águila real',
   },
   {
     level: 4,
     question: '¿Cuál es el animal nacional de Japón?',
-    answers: ['Grulla japonesa', 'Zorro japonés', 'Mono japonés', 'Carpas koi'],
+    answers: ['Mono japonés', 'Grulla japonesa', 'Carpas koi', 'Zorro japonés'],
     correctAnswer: 'Grulla japonesa',
   },
   {
     level: 4,
     question: '¿Cuál es la nacionalidad de Shakira?',
-    answers: ['Colombiana', 'Mexicana', 'Española', 'Argentina'],
+    answers: ['Colombiana', 'Española', 'Mexicana', 'Argentina'],
     correctAnswer: 'Colombiana',
   },
   {
     level: 4,
     question: '¿Cuál es la nacionalidad de Justin Bieber?',
-    answers: ['Canadiense', 'Estadounidense', 'Británico', 'Australiano'],
+    answers: ['Británico', 'Canadiense', 'Estadounidense', 'Australiano'],
     correctAnswer: 'Canadiense',
   },
   {
     level: 4,
     question: '¿Cuál es la nacionalidad de Adele?',
-    answers: ['Británica', 'Estadounidense', 'Australiana', 'Canadiense'],
+    answers: ['Estadounidense', 'Australiana', 'Canadiense', 'Británica'],
     correctAnswer: 'Británica',
   },
   {
     level: 4,
     question: '¿Cuál es la nacionalidad de Ricky Martin?',
-    answers: ['Puertorriqueña', 'Mexicana', 'Española', 'Colombiana'],
+    answers: ['Española', 'Mexicana', 'Puertorriqueña', 'Colombiana'],
     correctAnswer: 'Puertorriqueña',
   },
   {
     level: 4,
     question: '¿Cuál es la nacionalidad de Beyoncé?',
-    answers: ['Estadounidense', 'Británica', 'Jamaicana', 'Nigeriana'],
+    answers: ['Jamaicana', 'Estadounidense', 'Británica', 'Nigeriana'],
     correctAnswer: 'Estadounidense',
   },
   {
     level: 5,
     question: '¿Cuál es la capital de Sudáfrica?',
-    answers: ['Ciudad del Cabo', 'Johannesburgo', 'Pretoria', 'Durban'],
+    answers: ['Durban', 'Pretoria', 'Johannesburgo', 'Ciudad del Cabo'],
     correctAnswer: 'Pretoria',
   },
   {
     level: 5,
     question: '¿Cuál es la capital de India?',
-    answers: ['Nueva Delhi', 'Bombay', 'Calcuta', 'Bangalore'],
+    answers: ['Bangalore', 'Bombay', 'Nueva Delhi', 'Calcuta'],
     correctAnswer: 'Nueva Delhi',
   },
   {
@@ -427,128 +447,187 @@ export const triviaData =[
   {
     level: 5,
     question: '¿Cuál es la capital de Rusia?',
-    answers: ['Moscú', 'San Petersburgo', 'Novosibirsk', 'Ekaterimburgo'],
+    answers: ['Ekaterimburgo', 'San Petersburgo', 'Moscú', 'Novosibirsk'],
     correctAnswer: 'Moscú',
   },
   {
     level: 5,
     question: '¿Cuál es la capital de México?',
-    answers: ['Ciudad de México', 'Guadalajara', 'Monterrey', 'Puebla'],
+    answers: ['Monterrey', 'Guadalajara', 'Puebla', 'Ciudad de México'],
     correctAnswer: 'Ciudad de México',
   },
   {
     level: 5,
     question: '¿Cuál es la capital de Japón?',
-    answers: ['Tokio', 'Kioto', 'Osaka', 'Yokohama'],
+    answers: ['Yokohama', 'Osaka', 'Kioto', 'Tokio'],
     correctAnswer: 'Tokio',
   },
   {
     level: 5,
     question: '¿Cuál es el color de la bandera de Francia?',
-    answers: ['Azul, blanco y rojo', 'Verde, blanco y rojo', 'Amarillo, azul y rojo', 'Blanco, rojo y verde'],
+    answers: [
+      'Blanco, rojo y verde',
+      'Amarillo, azul y rojo',
+      'Verde, blanco y rojo',
+      'Azul, blanco y rojo',
+    ],
     correctAnswer: 'Azul, blanco y rojo',
   },
   {
     level: 5,
     question: '¿Cuál es el color de la bandera de Italia?',
-    answers: ['Verde, blanco y rojo', 'Amarillo, azul y rojo', 'Blanco, rojo y verde', 'Verde, blanco y negro'],
+    answers: [
+      'Verde, blanco y negro',
+      'Blanco, rojo y verde',
+      'Amarillo, azul y rojo',
+      'Verde, blanco y rojo',
+    ],
     correctAnswer: 'Verde, blanco y rojo',
   },
   {
     level: 5,
     question: '¿Cuál es el color de la bandera de Alemania?',
-    answers: ['Negro, rojo y amarillo', 'Verde, blanco y rojo', 'Blanco, rojo y verde', 'Amarillo, azul y rojo'],
+    answers: [
+      'Amarillo, azul y rojo',
+      'Negro, rojo y amarillo',
+      'Blanco, rojo y verde',
+      'Verde, blanco y rojo',
+    ],
     correctAnswer: 'Negro, rojo y amarillo',
   },
   {
     level: 5,
     question: '¿Cuál es el color de la bandera de España?',
-    answers: ['Rojo y amarillo', 'Verde, blanco y rojo', 'Blanco, rojo y verde', 'Amarillo, azul y rojo'],
+    answers: [
+      'Blanco, rojo y verde',
+      'Rojo y amarillo',
+      'Verde, blanco y rojo',
+      'Amarillo, azul y rojo',
+    ],
     correctAnswer: 'Rojo y amarillo',
   },
   {
     level: 5,
     question: '¿Cuál es el color de la bandera de Brasil?',
-    answers: ['Verde y amarillo', 'Verde, blanco y rojo', 'Blanco, rojo y verde', 'Amarillo, azul y rojo'],
+    answers: [
+      'Verde, blanco y rojo',
+      'Verde y amarillo',
+      'Blanco, rojo y verde',
+      'Amarillo, azul y rojo',
+    ],
     correctAnswer: 'Verde y amarillo',
   },
   {
     level: 6,
     question: '¿Cuál es el estado más poblado de México?',
-    answers: ['Ciudad de México', 'Estado de México', 'Jalisco', 'Veracruz'],
+    answers: ['Veracruz', 'Ciudad de México', 'Jalisco', 'Estado de México'],
     correctAnswer: 'Estado de México',
   },
   {
     level: 6,
     question: '¿Cuál es el estado más pequeño de México?',
-    answers: ['Tlaxcala', 'Colima', 'Aguascalientes', 'Baja California Sur'],
+    answers: ['Aguascalientes', 'Tlaxcala', 'Colima', 'Baja California Sur'],
     correctAnswer: 'Tlaxcala',
   },
   {
     level: 6,
     question: '¿Cuál es la provincia más grande de Canadá?',
-    answers: ['Quebec', 'Ontario', 'Alberta', 'Columbia Británica'],
+    answers: ['Columbia Británica', 'Alberta', 'Ontario', 'Quebec'],
     correctAnswer: 'Quebec',
   },
   {
     level: 6,
     question: '¿Cuál es la provincia más poblada de Canadá?',
-    answers: ['Ontario', 'Quebec', 'Alberta', 'Columbia Británica'],
+    answers: ['Alberta', 'Ontario', 'Quebec', 'Columbia Británica'],
     correctAnswer: 'Ontario',
   },
   {
     level: 6,
     question: '¿Cuál es la provincia más pequeña de Canadá?',
-    answers: ['Príncipe Eduardo', 'Nueva Escocia', 'Nueva Brunswick', 'Terranova y Labrador'],
+    answers: [
+      'Nueva Brunswick',
+      'Nueva Escocia',
+      'Terranova y Labrador',
+      'Príncipe Eduardo',
+    ],
     correctAnswer: 'Príncipe Eduardo',
   },
   {
     level: 6,
     question: '¿Cuál es la provincia más grande de Australia?',
-    answers: ['Queensland', 'Nueva Gales del Sur', 'Australia Occidental', 'Australia Meridional'],
+    answers: [
+      'Australia Occidental',
+      'Australia Meridional',
+      'Queensland',
+      'Nueva Gales del Sur',
+    ],
     correctAnswer: 'Australia Occidental',
   },
   {
     level: 6,
     question: '¿Cuál es la provincia más poblada de Australia?',
-    answers: ['Nueva Gales del Sur', 'Victoria', 'Queensland', 'Australia Occidental'],
+    answers: [
+      'Victoria',
+      'Australia Occidental',
+      'Queensland',
+      'Nueva Gales del Sur',
+    ],
     correctAnswer: 'Nueva Gales del Sur',
   },
   {
     level: 6,
     question: '¿Cuál es la provincia más pequeña de Australia?',
-    answers: ['Tasmania', 'Territorio del Norte', 'Australia Meridional', 'Queensland'],
+    answers: [
+      'Queensland',
+      'Tasmania',
+      'Australia Meridional',
+      'Territorio del Norte',
+    ],
     correctAnswer: 'Tasmania',
   },
   {
     level: 6,
     question: '¿Quién es el presidente de Estados Unidos?',
-    answers: ['Joe Biden', 'Donald Trump', 'Barack Obama', 'George W. Bush'],
+    answers: ['Donald Trump', 'Joe Biden', 'Barack Obama', 'George W. Bush'],
     correctAnswer: 'Joe Biden',
   },
   {
     level: 6,
     question: '¿Quién es el presidente de Rusia?',
-    answers: ['Vladimir Putin', 'Dmitry Medvedev', 'Boris Yeltsin', 'Mikhail Gorbachev'],
+    answers: [
+      'Dmitry Medvedev',
+      'Mikhail Gorbachev',
+      'Boris Yeltsin',
+      'Vladimir Putin',
+    ],
     correctAnswer: 'Vladimir Putin',
   },
   {
     level: 6,
     question: '¿Quién es el presidente de China?',
-    answers: ['Xi Jinping', 'Hu Jintao', 'Jiang Zemin', 'Deng Xiaoping'],
+    answers: ['Hu Jintao', 'Deng Xiaoping', 'Xi Jinping', 'Jiang Zemin'],
     correctAnswer: 'Xi Jinping',
   },
   {
     level: 6,
     question: '¿Quién es el presidente de Brasil?',
-    answers: ['Jair Bolsonaro', 'Michel Temer', 'Dilma Rousseff', 'Luiz Inácio Lula da Silva'],
+    answers: [
+      'Michel Temer',
+      'Luiz Inácio Lula da Silva',
+      'Jair Bolsonaro',
+      'Dilma Rousseff',
+    ],
     correctAnswer: 'Jair Bolsonaro',
   },
   {
     level: 6,
     question: '¿Quién es el presidente de México?',
-    answers: ['Andrés Manuel López Obrador', 'Enrique Peña Nieto', 'Felipe Calderón', 'Vicente Fox'],
+    answers: [
+      'Felipe Calderón',
+      'Andrés Manuel López Obrador',
+      'Vicente Fox',
+      'Enrique Peña Nieto',
+    ],
     correctAnswer: 'Andrés Manuel López Obrador',
-  }
-
+  },
 ];

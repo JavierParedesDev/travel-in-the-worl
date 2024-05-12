@@ -51,9 +51,9 @@
 
 .score-text {
   position: fixed;
-  top: 50%;
+  top: 90%;
   right: 20px;
-  transform: translateY(-50%);
+  transform: translateY(-20%);
   background-color: #e9004e;
   color: #fff;
   padding: 10px;
@@ -186,6 +186,30 @@ input[type="radio"] {
 .message-incorrecto{
   font-size: medium;
   text-align: center;
+}
+
+/* Estilos para los botones de respuesta */
+.answer-button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #af4caf; /* Color de fondo verde */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Estilo cuando se pasa el mouse sobre el botón */
+.answer-button:hover {
+  background-color: #a04594; /* Cambia el color de fondo al pasar el mouse */
+}
+/* Estilos para el botón de respuesta seleccionado */
+.answer-button.selected {
+  background-color: #45a049; /* Cambia el color de fondo al seleccionar */
+  color: white; /* Cambia el color del texto al seleccionar */
 }
 
 

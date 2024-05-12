@@ -108,10 +108,11 @@ export class Tab3Page implements OnInit {
       this.questions.splice(index, 1);
     }
     }
-    
-
     // Verificar si el juego ha terminado
-    
+    if (this.questions.length === 0) {
+      this.gameOver = true;
+      console.log('Juego terminado');
+    }
   }
 
   // Función para mezclar un arreglo (en este caso, las preguntas)
@@ -122,5 +123,9 @@ export class Tab3Page implements OnInit {
     }
     return array;
   }
+  selectAnswer(question: { selectedAnswer: any; } , selectedAnswer: any) {
+    question.selectedAnswer = selectedAnswer; // Almacena la respuesta seleccionada en la pregunta
+  }
+  
 
 }
